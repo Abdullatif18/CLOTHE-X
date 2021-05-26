@@ -1,0 +1,534 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Blogs & Reviews</title>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="../../font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+	
+	<link rel="icon" href="Ticon.png">
+	
+	
+<style>
+	
+	
+	/*BLOGS*/
+	
+.main	
+	{
+		font-family: "expletus-sans";
+		font-weight: 600;
+	}
+	
+	
+.head 
+	{
+		font-family: "expletus-sans";
+		padding: 3%;
+		padding-left: 1%;
+		font-size: 20px;
+	}
+	
+.blog_1
+	{
+		background-color: whitesmoke;
+	}
+	
+.categ b
+	{
+		font-family: "expletus-sans";
+		padding-left: 1%;
+		font-size: 16px;
+		opacity: 50%;
+	}
+	
+.categ a
+	{
+		text-decoration: none;
+		color: black;
+		font-size: 14px;
+		margin-left: 1%;
+		opacity: 70%;
+	}
+	
+.categ a:hover
+	{
+		color: red;
+		opacity: 80%;
+		transition: 0.2s ease;
+	}
+	
+.para
+	{
+		padding-left: 1%;
+		font-family: "expletus-sans";
+		font-size: 13px;
+		padding-right: 15%;
+		text-align: justify;
+	}
+	
+	/*FOOTER*/
+	
+.footer-top
+	{
+		background-color: whitesmoke;
+		padding: 80px 0px 40px 0px ;
+	}
+	
+
+	
+.segment-one  i
+	{
+		font-size: 18px;
+		color: whitesmoke;
+		padding: 10px 12px;
+		background-color: black;
+		border-radius: 50%;
+	}
+	
+.segment-one  i:hover
+	{
+		color: black;
+		background-color: whitesmoke;
+		border: 2px solid black;
+		transition: 0.5s ease;
+	}
+	
+.text
+	{
+		text-align: center;
+		font-size: 13px;
+		margin-top: 15%;
+		font-family: "expletus-sans";
+	}
+	
+.segment-two h6
+	{
+		font-weight: 700;
+		font-family: "expletus-sans";
+		text-align: left;
+		margin-left: 30%;
+	}
+	
+.segment-two ul
+	{
+		text-align: left;
+		margin-left: 15%;
+		text-decoration: none;
+		list-style: none;
+		font-size: 18px;
+		padding-top: 6%;
+		line-height: 35px;
+	}
+	
+.segment-three h6
+	{
+		font-weight: 700;
+		font-family: "expletus-sans";
+		text-align: left;
+		margin-left: 30%;
+	}
+	
+.segment-three ul
+	{
+		text-align: left;
+		margin-left: 15%;
+		text-decoration: none;
+		list-style: none;
+		font-size: 18px;
+		padding-top: 6%;
+		line-height: 35px;
+	}
+	
+.segment-four h6
+	{
+		font-weight: 700;
+		font-family: "expletus-sans";
+		text-align: left;
+		margin-left: 30%;
+	}
+	
+.segment-four ul
+	{
+		text-align: left;
+		margin-left: 15%;
+		text-decoration: none;
+		list-style: none;
+		font-size: 18px;
+		padding-top: 6%;
+		line-height: 35px;
+	}
+	
+.footer-bottom-text
+	{
+		text-align: center;
+		background-color: black;
+		color: white;
+		line-height: 70px;
+		margin: 0;
+		word-spacing: 3px;
+	}	
+	
+.container a
+	{
+	text-decoration: none;
+	color: black;
+	}
+
+.container a:hover	
+	{
+	color: red;
+	transition: 0.5s ease;
+	}	
+	
+.segment-four ul a
+	{
+		margin-left: 10px; 
+	}
+	
+.segment-four ul a:hover
+	{
+		color: black;
+	}
+	
+	/*NAVBAR*/
+	
+.navbar-nav	
+	{
+	font-family: "expletus-sans";
+	font-size: 16px;	
+	}
+	
+.nav-item
+	{
+	font-family: "expletus-sans";;
+	font-size: 16px;	
+	}
+	
+.nav-link
+	{
+	font-family: "expletus-sans";;
+	font-size: 16px;	
+	}	
+	
+	
+</style>	
+	
+	
+</head>
+
+<body>
+	
+	
+	<!--NAVBAR-->
+	
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	
+	<img src="Logo.png" width="13%" alt="logo" style="margin-left: 4%; margin-top:1%; margin-bottom:1%; ">
+	
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  
+	<ul class="navbar-nav" style="margin-left: 12%;">
+		
+		<li class="nav-item">
+			<a class="nav-link" style="margin-left: 15px;" href="#">UNSTITCHED</a>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link" style="margin-left: 15px;" href="#">READY TO WEAR</a>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link" href="#">WESTERN WEAR</a>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link" style="margin-left: 15px;" href="#">KIDS</a>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link" style="margin-left: 15px;" href="#">CLOTHE-X HOME</a>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link" style="margin-left: 15px;" href="#">ACCESSORIES</a>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link text-danger" style="margin-left: 15px;" href="#">SALE %</a>
+		</li>
+      
+    </ul>	
+		
+	</div>
+	
+</nav>	<br>	
+	
+	
+	<!--BLOGS-->
+	
+<div class="container">
+	
+	<h3 class="main">CLOTHE-X BLOGS</h3>	<br>
+	
+	<div class="blog_1">
+	
+		<div class="row">
+		
+		<div class="col-lg-6 col-md-6 col-sm-12">	
+			
+		<img src="Pics/B&R 4.jpg" width="100%" style="padding:3%;">
+			
+		</div>	
+			
+		<div class="col-lg-6 col-md-6 col-sm-12">
+			
+		<h6 class="head">Flats over Heels? Anytime, every time!</h6> 
+			
+		<h6 class="categ"><b>Categories:</b><a href="#">CLOTHE-X Accessories</a></h6>	<br>
+			
+		<p class="para">There is a LOT happening in the world right now with the coronavirus pandemic and anxiety-inducing headlines. And while it's important to stay informed and make sure you're social-distancing to keep yourself and others safe, the round-the-clock influx of news....</p>	
+		
+		<h6 class="categ"><a href="#">Continue Read</a></h6>	
+			
+		</div>	
+		
+		</div>	
+	
+	</div>	<br>	<br>	<br>
+	
+	
+	<div class="blog_1">
+	
+		<div class="row">
+		
+		<div class="col-lg-6 col-md-6 col-sm-12">	
+			
+		<img src="Pics/B&R 5.jpg" width="100%" style="padding:3%;">
+			
+		</div>	
+			
+		<div class="col-lg-6 col-md-6 col-sm-12">
+			
+		<h6 class="head">Noor-e-Chashm x Mehwish Hayat: A Celebrated Launch</h6> 
+			
+		<h6 class="categ"><b>Categories:</b><a href="#">CLOTHE-X Unstitched</a></h6>	<br>
+			
+		<p class="para">Noor-e-Chashm Royal Collection is the epitome of all things luxurious and contemporary. The supremely elegant edit celebrates harmony between timeless tradition and modern design. Featuring hand embroidered 3-piece velvet suits, the collection is a unique blend....</p>
+			
+		<h6 class="categ"><a href="#">Continue Read</a></h6>	
+			
+		</div>	
+		
+		</div>	
+	
+	</div>	<br>	<br>	<br>
+	
+	
+	<div class="blog_1">
+	
+		<div class="row">
+		
+		<div class="col-lg-6 col-md-6 col-sm-12">	
+			
+		<img src="Pics/B&R 6.jpg" width="100%" style="padding:3%;">
+			
+		</div>	
+			
+		<div class="col-lg-6 col-md-6 col-sm-12">
+			
+		<h6 class="head">This is a Separate Conversation</h6> 
+			
+		<h6 class="categ"><b>Categories:</b><a href="#">CLOTHE-X Unstitched</a></h6>	<br>
+			
+		<p class="para">Time to talk! Grab yourselves a hot cup of tea and get comfortable because we are about to have a conversation. No, no! I am not going to ask you about what you did last summer. I'm just here to have a casual conversation about the rising trend of matching separates....</p>
+			
+		<h6 class="categ"><a href="#">Continue Read</a></h6>	
+			
+		</div>	
+		
+		</div>	
+	
+	</div>	<br>	<br>	<br>
+	
+	
+	<div class="blog_1">
+	
+		<div class="row">
+		
+		<div class="col-lg-6 col-md-6 col-sm-12">	
+			
+		<img src="Pics/B&R 3.jpg" width="100%" style="padding:3%;">
+			
+		</div>	
+			
+		<div class="col-lg-6 col-md-6 col-sm-12">
+			
+		<h6 class="head">Accentuate Your Summer Looks With Beautiful 2-Piece Lawn Designs</h6> 
+			
+		<h6 class="categ"><b>Categories:</b><a href="#">CLOTHE-X Unstitched</a></h6>	<br>
+			
+			<p class="para">Time to do away with all the greys as we welcome bright sunny days. Summer is almost here and we all know what that means. Lawn is ready to reign our wardrobes. From vibrant colors to…</p>
+			
+		<h6 class="categ"><a href="#">Continue Read</a></h6>	
+			
+		</div>	
+		
+		</div>	
+	
+	</div>	<br>	<br>	<br>
+	
+	
+	<div class="blog_1">
+	
+		<div class="row">
+		
+		<div class="col-lg-6 col-md-6 col-sm-12">	
+			
+		<img src="Pics/B&R 2.jpg" width="100%" style="padding:3%;">
+			
+		</div>	
+			
+		<div class="col-lg-6 col-md-6 col-sm-12">
+			
+		<h6 class="head">Pastel Perfection is Back in Fashion!</h6> 
+			
+		<h6 class="categ"><b>Categories:</b><a href="#">CLOTHE-X Unstitched</a></h6>	<br>
+			
+		<p class="para">With winter behind us, the clock is ready to strike Spring/Summer 2020. As much as we love our all-black, denim-on-denim and model-off-duty looks, it's time to add a slight dash of color…</p>
+			
+		<h6 class="categ"><a href="#">Continue Read</a></h6>	
+			
+		</div>	
+		
+		</div>	
+	
+	</div>	<br>	<br>	<br>
+	
+	
+	<div class="blog_1">
+	
+		<div class="row">
+		
+		<div class="col-lg-6 col-md-6 col-sm-12">	
+			
+		<img src="Pics/B&R 1.jpg" width="100%" style="padding:3%;">
+			
+		</div>	
+			
+		<div class="col-lg-6 col-md-6 col-sm-12">
+			
+		<h6 class="head">Dil Se #PakistanKiPehchan</h6> 
+			
+		<h6 class="categ"><b>Categories:</b><a href="#">CLOTHE-X Unstitched</a></h6>	<br>
+			
+		<p class="para">Every summer, women all over Pakistan and beyond wait for one thing only: LAWN. Waiting for CLOTHE-X Summer Lawn Collection is a unique trait that spreads across generations. Lawn connects us in many ways....</p>
+			
+		<h6 class="categ"><a href="#">Continue Read</a></h6>	
+			
+		</div>	
+		
+		</div>	
+	
+	</div>	<br>	<br>	<br>
+	
+</div>
+	
+	<!--FOOTER-->
+
+<footer>
+	
+
+<div class="footer-top">
+	
+<div class="container">
+	
+<div class="row">
+	
+	
+	<div class="col-lg-3 col-md-6 col-sm-12 segment-one">
+	
+		<img src="Logo.png" width="100%" style="margin-top:-3%;">
+		
+		<p class="text">Join <b>CLOTHE-X</b> and get all the latest news</p>
+		
+		<a href="#"><i class="fa fa-facebook"></i></a>
+		<a href="#"><i class="fa fa-instagram"></i></a>
+		<a href="#"><i class="fa fa-linkedin"></i></a>
+		<a href="#"><i class="fa fa-twitter"></i></a>
+		<a href="#"><i class="fa fa-pinterest-p"></i></a>
+	
+	</div>
+	
+	
+	<div class="col-lg-3 col-md-6 col-sm-12 segment-two">
+	
+		<h6>ABOUT CLOTHE-X</h6>
+		
+		<ul>
+			
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Careers</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			
+		</ul>
+	
+	</div>
+	
+	
+	<div class="col-lg-3 col-md-6 col-sm-12 segment-three">
+	
+		<h6>CUSTOMER CARE</h6>
+		
+		<ul>
+			
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Shipping Policy</a></li>
+			<li><a href="#">Return & Exchange</a></li>
+			
+		</ul>
+	
+	</div>
+	
+	
+	<div class="col-lg-3 col-md-6 col-sm-12 segment-four">
+	
+		<h6>GET IN TOUCH</h6>
+		
+		<ul>
+		
+			<li><i class="fa fa-envelope"><a href="#">customercare@clothex.com</a></i></li>
+			
+			<li><i class="fa fa-phone"><a href="#">021 580141</a></i></li>
+		
+		</ul>		
+	
+	</div>
+	
+	
+</div>	
+	
+</div>
+	
+</div>	
+	
+	<p class="footer-bottom-text">Copyright &copy; 2020 <b>CLOTHE-X</b> Pakistan All Rights Reserved.</p>
+	
+</footer>
+	
+	
+</body>
+</html>

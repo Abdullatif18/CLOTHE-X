@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Return Exchange</title>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="../../font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+	
+	<link rel="icon" href="Ticon.png">
+	
+	
+<style>
+	
+body
+	{
+		margin: 0;
+	}
+	
+.container h3
+	{
+		font-family: "expletus-sans";
+		font-weight: 600;
+	}
+	
+.box
+	{
+		background-color: whitesmoke;
+		color: black;
+		padding: 1.5%;
+		border: 1px solid rgba(50,50,50,.2);
+	}
+	
+.box h5
+	{
+		font-family: "expletus-sans";
+		font-weight: 600;
+	}
+	
+.box p
+	{
+		font-family: "expletus-sans";
+		font-size: 15px;
+	}
+	
+	/*FOOTER*/
+	
+.footer-top
+	{
+		background-color: whitesmoke;
+		padding: 80px 0px 40px 0px ;
+	}
+	
+
+	
+.segment-one  i
+	{
+		font-size: 18px;
+		color: whitesmoke;
+		padding: 10px 12px;
+		background-color: black;
+		border-radius: 50%;
+	}
+	
+.segment-one  i:hover
+	{
+		color: black;
+		background-color: whitesmoke;
+		border: 2px solid black;
+		transition: 0.5s ease;
+	}
+	
+.text
+	{
+		text-align: center;
+		font-size: 13px;
+		margin-top: 15%;
+		font-family: "expletus-sans";
+	}
+	
+.segment-two h6
+	{
+		font-weight: 700;
+		font-family: "expletus-sans";
+		text-align: left;
+		margin-left: 30%;
+	}
+	
+.segment-two ul
+	{
+		text-align: left;
+		margin-left: 15%;
+		text-decoration: none;
+		list-style: none;
+		font-size: 18px;
+		padding-top: 6%;
+		line-height: 35px;
+	}
+	
+.segment-three h6
+	{
+		font-weight: 700;
+		font-family: "expletus-sans";
+		text-align: left;
+		margin-left: 30%;
+	}
+	
+.segment-three ul
+	{
+		text-align: left;
+		margin-left: 15%;
+		text-decoration: none;
+		list-style: none;
+		font-size: 18px;
+		padding-top: 6%;
+		line-height: 35px;
+	}
+	
+.segment-four h6
+	{
+		font-weight: 700;
+		font-family: "expletus-sans";
+		text-align: left;
+		margin-left: 30%;
+	}
+	
+.segment-four ul
+	{
+		text-align: left;
+		margin-left: 15%;
+		text-decoration: none;
+		list-style: none;
+		font-size: 18px;
+		padding-top: 6%;
+		line-height: 35px;
+	}
+	
+.footer-bottom-text
+	{
+		text-align: center;
+		background-color: black;
+		color: white;
+		line-height: 70px;
+		margin: 0;
+		word-spacing: 3px;
+	}	
+	
+.container a
+	{
+	text-decoration: none;
+	color: black;
+	}
+
+.container a:hover	
+	{
+	color: red;
+	transition: 0.5s ease;
+	}	
+	
+	/*NAVBAR*/
+	
+.navbar-nav	
+	{
+	font-family: "expletus-sans";
+	font-size: 16px;	
+	}
+	
+.nav-item
+	{
+	font-family: "expletus-sans";;
+	font-size: 16px;	
+	}
+	
+.nav-link
+	{
+	font-family: "expletus-sans";;
+	font-size: 16px;	
+	}	
+	
+	
+</style>	
+	
+	
+</head>
+
+<body>
+	
+	<!--NAVBAR-->
+	
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	
+	<img src="Logo.png" width="13%" alt="logo" style="margin-left: 4%; margin-top:1%; margin-bottom:1%; ">
+	
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  
+	<ul class="navbar-nav" style="margin-left: 12%;">
+		
+		<li class="nav-item">
+			<a class="nav-link" style="margin-left: 15px;" href="#">UNSTITCHED</a>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link" style="margin-left: 15px;" href="#">READY TO WEAR</a>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link" href="#">WESTERN WEAR</a>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link" style="margin-left: 15px;" href="#">KIDS</a>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link" style="margin-left: 15px;" href="#">CLOTHE-X HOME</a>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link" style="margin-left: 15px;" href="#">ACCESSORIES</a>
+		</li>
+		
+		<li class="nav-item">
+			<a class="nav-link text-danger" style="margin-left: 15px;" href="#">SALE %</a>
+		</li>
+      
+    </ul>	
+		
+	</div>
+	
+</nav>	<br>
+	
+	
+	<!--RETURN & EXCHANGE-->
+	
+<div class="container">
+	
+	<h3>RETURN & EXCHANGE</h3> <br>
+	
+	<div class="box">
+		
+		<p>All products purchased from CLOTHE-X can be exchanged within 30 days only if:</p>
+		
+		<ul>
+			<li>The item(s) is faulty, damaged or defective at the time of delivery.</li>
+			<li>The item(s) does not match the original specifications of the product or is found to be not the same as you had actually purchased.</li>
+		</ul>
+		
+		<p>You must notify us within 3 days of delivery by writing to customerservice@clothex.com or calling at 021 580141 in case you want to raise a dispute. CLOTHE-X looks at each dispute on a case-by-case basis and tries to be fair to both parties.</p> 
+		
+		<p>You will be required to email photographic evidence of the defective item at complaint@clothex.com  within 30 days of purchase before any claims can be processed.</p>
+			
+		<p>In case an item is found to be faulty or damaged, you will have to send the defective product back to CLOTHE-X within 15 days of purchase. Upon receipt, CLOTHE-X shall issue a replacement against the product mentioned in the Invoice.</p>
+		
+		<p>Product/item ordered online can be exchanged at any CLOTHE-X Exclusive or retail store.</p>
+		
+		<p>There are certain scenarios where it is difficult for us to support exchanges. Such scenarios include but are not limited to the following:</p>
+		
+		<ul>
+			<li>Exchange request is made outside the specified time frame.</li>
+			<li>Product is damaged because of use.</li>
+			<li>Product has been tampered.</li>
+			<li>Anything is missing from the package including price tags, labels, original packing, freebies and accessories.</li>
+		</ul>
+		
+		<p>CLOTHE-X does not offer a “cash refund” or “Money Back Guarantee” on purchased items.</p>
+
+		<p>A “refund” may only be issued if:</p>
+		
+		<ul>
+			<li>The customer cancels the order, before CLOTHE-X starts processing the shipment.</li>
+			<li>The item(s) does not match the original specifications of the product. </li>
+			<li>The transaction does not verify the security checks and CLOTHE-X is not willing to process such order.</li>
+			<li>The shipment has been delayed due to weather issues, logistic issues, political issues, etc. and the customer thinks that they do not need the products any longer.</li>
+			<li>Refunds can not be issued from our retail stores. </li>
+		</ul>
+		
+		<p>CLOTHE-X has the right to cancel orders for reasons such as - item is out of stock, or the credit card payment declined by the issuing financial institution.</p>
+		
+	</div>
+	
+	
+</div> <br> <br> <br>
+	
+	<!--FOOTER-->
+	
+<footer>
+	
+<div class="footer-top">
+	
+<div class="container">
+	
+<div class="row">
+	
+	
+	<div class="col-lg-3 col-md-6 col-sm-12 segment-one">
+	
+		<img src="Logo.png" width="100%" style="margin-top:-3%;">
+		
+		<p class="text">Join <b>CLOTHE-X</b> and get all the latest news</p>
+		
+		<a href="#"><i class="fa fa-facebook"></i></a>
+		<a href="#"><i class="fa fa-instagram"></i></a>
+		<a href="#"><i class="fa fa-linkedin"></i></a>
+		<a href="#"><i class="fa fa-twitter"></i></a>
+		<a href="#"><i class="fa fa-pinterest-p"></i></a>
+	
+	</div>
+	
+	
+	<div class="col-lg-3 col-md-6 col-sm-12 segment-two">
+	
+		<h6>ABOUT CLOTHE-X</h6>
+		
+		<ul>
+			
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Careers</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			
+		</ul>
+	
+	</div>
+	
+	
+	<div class="col-lg-3 col-md-6 col-sm-12 segment-three">
+	
+		<h6>CUSTOMER CARE</h6>
+		
+		<ul>
+			
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Shipping Policy</a></li>
+			<li><a href="#">Return & Exchange</a></li>
+			
+		</ul>
+	
+	</div>
+	
+	
+	<div class="col-lg-3 col-md-6 col-sm-12 segment-four">
+	
+		<h6>HELP</h6>
+		
+		<ul>
+		
+			<li><a href="#">Track Your Order</a></li>
+			<li><a href="#">Terms & Conditions</a></li>
+		
+		</ul>		
+	
+	</div>
+	
+	
+</div>	
+	
+</div>
+	
+</div>	
+	
+	<p class="footer-bottom-text">Copyright &copy; 2020 <b>CLOTHE-X</b> Pakistan All Rights Reserved.</p>
+	
+</footer>	
+	
+	
+</body>
+	
+</html>
